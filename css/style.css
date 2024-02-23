@@ -4,7 +4,7 @@ padding e border no calculo da largura/altura dos elementos, e define a fonte pa
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: serif;
+    font-family:cursive;
 }
 
 /*Define o layout principal do body para flex, centraliza seu conteúdo horizontal e verticalmente */
@@ -28,6 +28,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10% 10% 10% 10%;
+    background-color:rgba(76, 206, 238, 0.2);
 }
 
 /*Estiliza os spans dentro do .container, posicionando-os absolutamente para cobrir todo o container */
@@ -40,16 +42,15 @@ body{
 
 /*Personaliza a forma dos spans usando border-radius para criar formar únicas e aplica animações*/
 .container span:nth-child(1){
-    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
-    animation: animate 6s linear infinite;
+    border-radius: 10% 10% 10% 10%;
 }
 
 .container span:nth-child(2){
-    border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
-    animation: animate 4s linear infinite;
+    border-radius: 50% 63% 62% 44% / 41% 47% 57% 59%;
+    animation: animate 10s linear infinite;
 }
 
-.container span:nth-child(3){
+/*.container span:nth-child(3){
     border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
     animation: animate2 10s linear infinite;
 }
@@ -57,6 +58,7 @@ body{
     border-radius: 30% 30% 30% 30% / 20% 20% 20% 20%;
     animation: animate3 5s linear reverse infinite;
 }
+
 /*Aumenta a espessura da borda e aplica um sombreado quando o .container é passado por cima*/
 .container:hover span{
     border: 6px solid var(--clr);
@@ -135,8 +137,8 @@ gap: 20px;
 .input-container input[type="submit"]{
     width: 100%;
     background: #0078ff;
-    background: -webkit-linear-gradient(to right, #240b36, #c31432);
-    background: linear-gradient(to right, #240b36, #c31432);
+    background: -webkit-linear-gradient(to right, #240b36, #dd431d);
+    background: linear-gradient(to right, #240b36, #dd431d);
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
